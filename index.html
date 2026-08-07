@@ -3,7 +3,36 @@
 <head>
 <title>Website của tôi</title>
 
-<style>
+<style>header{
+    animation: slideDown 1s ease;
+}
+
+@keyframes slideDown{
+    from{
+        transform: translateY(-50px);
+        opacity:0;
+    }
+    to{
+        transform: translateY(0);
+        opacity:1;
+    }
+}
+
+button{
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse{
+    0%{
+        transform:scale(1);
+    }
+    50%{
+        transform:scale(1.1);
+    }
+    100%{
+        transform:scale(1);
+    }
+}
 body{
     margin:0;
     font-family:Arial;
